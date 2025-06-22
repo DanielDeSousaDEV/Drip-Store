@@ -89,11 +89,11 @@ export function HomePage() {
     return (
         <>
             <Layout>
-                <Gallery images={images}  height={681}/>
+                <Gallery images={images} className='mb-8' height={681}/>
 
-                <div className="px-5 md:px-24 mb-32">
-                  <Section className='mb-28' link={{title: 'Coleções em destaque', href: '#'}}>
-                    <div className="grid  md:grid-cols-3 gap-3">
+                <div className="px-5 md:px-24 mb-10 md:mb-32">
+                  <Section className='mb-20 md:mb-28' link={{title: 'Coleções em destaque', href: '#'}}>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 place-content-center">
                       <div className="relative">
                         <div className="absolute top-3 left-6 bg-[#E7FF86] py-1.5 px-4 rounded-4xl">
                           <p className="font-bold">
@@ -130,7 +130,7 @@ export function HomePage() {
                     </div>
                   </Section>
 
-                  <Section className='mb-32' link={{title: 'Coleções em destaque', href: '#'}} titleAlign="center">
+                  <Section className='mb-20 md:mb-32' link={{title: 'Coleções em destaque', href: '#'}} titleAlign="center">
                     <div className="flex items-center justify-center overflow-x-auto gap-12">
                       <NavLink className="w-fit flex items-center justify-center flex-col gap-3">
                         {({isActive}) => (
@@ -194,7 +194,7 @@ export function HomePage() {
                   </Section>
                 </div>
                       
-                <div className="flex items-center justify-between flex-col lg:flex-row gap-16 p-5 md:px-24 pb-28 pt-24 bg-white">
+                <div className="flex items-center justify-between flex-col lg:flex-row gap-16 p-5 md:px-24 pb-12 md:pb-28 pt-20 md:pt-24 bg-white">
                   <div className="relative">
                     <div className="absolute -top-10 h-72 md:h-100 w-72 md:w-100 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#4200FF40]/50 to-white/0 rounded-full z-10"></div>
                     <img src="/shoes.png" className="z-20 relative w-full"/>
