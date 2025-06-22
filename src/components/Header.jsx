@@ -7,7 +7,7 @@ import { Button } from "./Button";
 
 export function Header() {
     return (
-        <header className="p-5 md:px-12 lg:px-24 md:py-8 md:space-y-10">
+        <header className="p-5 md:px-12 lg:px-24 md:py-8 md:space-y-10 bg-white">
             <div className="flex items-center justify-evenly gap-8">
                 <Menu className="md:hidden"/>
 

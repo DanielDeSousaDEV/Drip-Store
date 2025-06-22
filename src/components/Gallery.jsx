@@ -22,17 +22,19 @@ export function Gallery({className, width, height, radius, showThumbs=false, ima
                     <img src={images[i].src} alt="" className='block h-12 object-cover' style={{borderRadius: radius}}/>
                 </a>
             )
-        } : {}),
+        } : {
+            className: '!h-full ' + className
+        }),
     };
 
     return (
         <div 
             style={{height, width, borderRadius: radius, overflow: 'hidden'}}
         >
-            <Slider {...settings} {...props}>
+            <Slider {...settings} {...props}> 
                 {images.map((img, idx) => 
-                    <div key={idx} style={{height}} className='!flex items-center justify-center'>
-                        <img src={img.src} style={{borderRadius: radius}}  className='w-auto h-full text-center object-fit'/>
+                    <div key={idx} className='!flex items-center justify-center !h-full'>
+                        <img src={img.src} style={{borderRadius: radius}} className='w-auto !h-full text-center object-cover bg-dark-gray-2 grayscale-25'/>
                     </div>
                 )}
             </Slider>

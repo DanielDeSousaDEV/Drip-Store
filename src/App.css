@@ -21,6 +21,14 @@ body {
 }
 
 .slick-dots li button:before {
-  font-size: 12px !important;
+  font-size: 8px !important;
   color: #C92071 !important;
+  
+  @media (width >= 48rem){
+    font-size: 12px !important;
+  }
 } 
+
+.slick-slide, .slick-track, .slick-list, .slick-slide > div {
+  height: 100% !important;
+}
