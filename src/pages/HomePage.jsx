@@ -202,7 +202,7 @@ export function HomePage() {
                   <div>
                     <small className="block font-bold transition-colors text-warning md:text-primary mb-4">Oferta especial</small>
                     <h4 className="text-3xl md:text-5xl font-bold mb-5 text-dark-gray-2">Air Jordan edição de colecionador</h4>
-                    <p className="text-dark-gray-2 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p className="text-dark-gray-2 mb-8 leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, quas! Aut doloribus pariatur quisquam </p>
                     <Button>Ver Oferta</Button>
                   </div>
                 </div>

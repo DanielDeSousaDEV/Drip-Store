@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react'
+import { ArrowRightIcon } from 'lucide-react'
 
 export function Section({link, titleAlign='left', className, withCallToAction=false, children}) {
     return (
@@ -7,7 +7,7 @@ export function Section({link, titleAlign='left', className, withCallToAction=fa
                 <a href={link.href} className='text-dark-gray-2 text-2xl font-semibold capitalize'>{link.title}</a>
                 {withCallToAction && (
                     <a href={link.href} className="flex gap-2 text-primary">
-                        <p className="text-lg">Ver todos</p>
+                        <span className="text-lg">Ver todos</span>
                         <ArrowRightIcon/>
                     </a>
                 )}

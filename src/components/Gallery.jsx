@@ -15,11 +15,12 @@ export function Gallery({className, width, height, radius, showThumbs=false, ima
         slidesToScroll: 1,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
+        
         ...(showThumbs ? {
             className: `mb-10 ${className ?? ''}`,
             customPaging: (i) => (
-                <a>
-                    <img src={images[i].src} alt="" className='block h-12 object-cover' style={{borderRadius: radius}}/>
+                <a className='cursor-pointer bg-red-500 shrink-0'>
+                    <img src={images[i].src} alt="" className='block h-12 object-cover shrink-0' style={{borderRadius: radius}}/>
                 </a>
             )
         } : {
@@ -29,7 +30,8 @@ export function Gallery({className, width, height, radius, showThumbs=false, ima
 
     return (
         <div 
-            style={{height, width, borderRadius: radius, overflow: 'hidden'}}
+            style={{minHeight: height, maxWidth: width, borderRadius: radius, overflow: 'hidden'}}
+            className='shrink-0'
         >
             <Slider {...settings} {...props}> 
                 {images.map((img, idx) => 

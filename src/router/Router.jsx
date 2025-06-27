@@ -1,9 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Layout } from "../pages/Layout";
-import { Logo } from "../components/Logo";
 import { HomePage } from "../pages/HomePage";
-import { ProductListing } from "../components/ProductListing";
 import { ProductListingPage } from "../pages/ProductListingPage";
+import { ProductViewPage } from "../pages/ProductViewPage";
 
 export function Router() {
     return (
@@ -11,7 +9,7 @@ export function Router() {
             <Routes>
                 <Route index element={<HomePage/>} />
                 <Route path="/produtos" element={<ProductListingPage/>} />
-                <Route path="/logo" element={<Logo/>} />
+                <Route path="/produtos/:id" element={<ProductViewPage />} />
             </Routes>
         </BrowserRouter>
     )

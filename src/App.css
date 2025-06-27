@@ -30,5 +30,10 @@ body {
 } 
 
 .slick-slide, .slick-track, .slick-list, .slick-slide > div {
-  height: 100% !important;
+  min-height: 100% !important;
+  flex-shrink: 0;
+}
+
+.slick-slide > div{
+  flex-shrink: 0;
 }
