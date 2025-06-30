@@ -1,6 +1,16 @@
+import { useNavigate } from "react-router-dom"
+
 export function ProductCard({product}) {
+    const navigate = useNavigate()
+
+    function handleClick() {
+        navigate('/produtos/1')
+        
+    }
+    
+    console.log(product.image);
     return (
-        <div className="w-fit rounded-sm">
+        <div className="w-fit rounded-sm cursor-pointer" onClick={handleClick}>
             <div className="relative w-fit mx-auto">
                 {product.discount &&
                     (
@@ -11,7 +21,7 @@ export function ProductCard({product}) {
                         </div>
                     )
                 }
-                <img src="https://cdn-images.dzcdn.net/images/artist/9d8a9be7640f1c7f62ac651cc304a2d4/500x500.jpg" alt="" className="w-40 sm:w-72 h-44 sm:h-80 object-cover rounded-sm mb-4 bg-white shadow-lg"/>
+                <img src={product.image} alt="" className="w-40 sm:w-72 h-44 sm:h-80 object-cover rounded-sm mb-4 bg-white shadow-lg"/>
             </div>
             <small className="text-xs text-light-gray font-bold">{product.category}</small>
             <p className=" text-base lg:text-lg md:text-2xl text-dark-gray-2 line-clamp-1 md:line-clamp-none">{product.name}</p>

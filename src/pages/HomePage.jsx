@@ -27,6 +27,7 @@ const products = [
     id: 1,
     name: "Camiseta Oversize Preta",
     category: "Camisetas",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     price: 79.90,
     priceDiscount: 59.90,
     discount: 25,
@@ -35,6 +36,7 @@ const products = [
     id: 2,
     name: "Calça Cargo Verde Oliva",
     category: "Calças",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     price: 129.90,
     priceDiscount: 99.90,
     discount: 23,
@@ -43,6 +45,7 @@ const products = [
     id: 3,
     name: "Jaqueta Corta Vento",
     category: "Jaquetas",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     price: 159.90,
     priceDiscount: 129.90,
     discount: 18,
@@ -50,12 +53,14 @@ const products = [
   {
     id: 4,
     name: "Boné Snapback Preto",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     category: "Acessórios",
     price: 39.90,
   },
   {
     id: 5,
     name: "Tênis Chunky Branco",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     category: "Calçados",
     price: 299.90,
     priceDiscount: 219.90,
@@ -63,6 +68,7 @@ const products = [
   },
   {
     id: 6,
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     name: "Moletom Canguru Cinza",
     category: "Moletons",
     price: 189.90,
@@ -72,12 +78,14 @@ const products = [
   {
     id: 7,
     name: "Bermuda Jeans Claro",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     category: "Bermudas",
     price: 109.90,
   },
   {
     id: 8,
     name: "Camisa Polo Marinho",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/df8471dab7fa4d3e89a88572f3bbab83_9366/Tenis_Park_Street_Branco_IG9849.jpg",
     category: "Camisas",
     price: 79.90,
     priceDiscount: 64.90,
@@ -89,7 +97,7 @@ export function HomePage() {
     return (
         <>
             <Layout>
-                <Gallery images={images} className='mb-8' height={681}/>
+                <Gallery images={images} className='mb-8 cursor-pointer' height={681}/>
 
                 <div className="px-5 md:px-24 mb-10 md:mb-32">
                   <Section className='mb-20 md:mb-28' link={{title: 'Coleções em destaque', href: '#'}}>

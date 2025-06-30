@@ -25,7 +25,7 @@ export function NavBar() {
                 className={
                     ({isActive}) => `border-b-2 leading-7 transition-colors ${isActive ? 'font-bold border-primary text-primary capitalize' : 'border-transparent text-dark-gray-2 hover:border-dark-gray-2'}`
                 }
-                to='/logo'
+                to='/category'
             >
                 Categorias
             </NavLink>
@@ -34,7 +34,7 @@ export function NavBar() {
                 className={
                     ({isActive}) => `border-b-2 leading-7 transition-colors ${isActive ? 'font-bold border-primary text-primary capitalize' : 'border-transparent text-dark-gray-2 hover:border-dark-gray-2'}`
                 }
-                to='/logo'
+                to='/orders'
             >
                 Meus pedidos
             </NavLink>
